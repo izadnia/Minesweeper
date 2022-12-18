@@ -2,6 +2,7 @@
 a Python version of Minesweeper (Game)
 
 [Minesweeper is a logic puzzle video game genre generally played on personal computers.]
+.
 [you need to have Python installed on your PC]
 
 How it works:
