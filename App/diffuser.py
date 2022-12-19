@@ -9,3 +9,15 @@ def creat_board():
     Bomb_list = []
     
     
+    for i in range(0,B_count):
+        b = []
+        # bomb number
+        print("Bomb coordinates no " + str(i+1))
+        # Horizontal coordinates
+        b.append(input("Y : "))
+        # Vertical coordinates
+        b.append(input("X : "))
+        # append to the general list
+        Bomb_list.append(b)
+    
+    
