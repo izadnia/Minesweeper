@@ -26,3 +26,14 @@ def creat_board():
             print("    ")
         print()
     print("Game Created ")
+
+    
+     # Matrix created
+    matrix = []
+    for i in range(0,Y):
+        mat_x = []
+        for j in range(0,X):
+            mat_x.append("0")
+        matrix.append(mat_x)
+        
+        
