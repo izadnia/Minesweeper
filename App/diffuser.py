@@ -21,3 +21,8 @@ def creat_board():
         Bomb_list.append(b)
     
     
+    for i in range(0,10):
+        for i in range(0,10):
+            print("    ")
+        print()
+    print("Game Created ")
