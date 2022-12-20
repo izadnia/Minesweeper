@@ -37,3 +37,12 @@ def creat_board():
         matrix.append(mat_x)
         
         
+    # Game Board
+    for row in matrix:
+        for val in row:
+            print(val, end=" ")
+        print()
+
+    print()
+    print()
+    print()
