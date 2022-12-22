@@ -46,3 +46,12 @@ def creat_board():
     print()
     print()
     print()
+    
+    
+    # bombs are gonna located in places
+    counter = 0
+    for i in range(0, len(Bomb_list)):
+        matrix[int(Bomb_list[i][0])-1][int(Bomb_list[i][1])-1] = "B"
+
+
+    
