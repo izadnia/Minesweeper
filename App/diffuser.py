@@ -55,3 +55,15 @@ def creat_board():
 
 
     
+    game_score = matrix
+   # Board game with Bombs
+    for row in game_score:
+        for val in row:
+            print(val, end=" ")
+        print()
+ 
+    print()
+    print()
+    print()
+    clean()
+    
