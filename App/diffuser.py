@@ -67,3 +67,37 @@ def creat_board():
     print()
     clean()
     
+def value():
+
+    for row in range(0,len(matrix)):
+        for val in range(0,len(matrix[row])):
+            counter = int(0)
+            if matrix[row][val] == "B":
+                continue
+            # امتياز خانه بالا
+            if (row-1) >= 0 and  matrix[row-1][val] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+            # امتياز خانه پايين
+            if row+1 < len(matrix) and  matrix[row+1][val] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+            # امتياز راست
+            if (val+1) < len(matrix[row]) and  matrix[row][val+1] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+            #امتياز چپ
+            if (val-1) >= 0 and  matrix[row][val-1] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+            #امتياز بالا راست
+            if (row-1) >= 0 and (val+1) < len(matrix[row]) and  matrix[row-1][val+1] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+            #امتياز بالا چپ
+            if (row-1) >= 0 and (val-1) >= 0 and  matrix[row-1][val-1] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+            #امتياز پايين راست
+            if (row+1) < len(matrix) and (val+1) < len(matrix[row]) and  matrix[row+1][val+1] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+            #امتياز پايين چپ
+            if (row+1) < len(matrix) and (val-1) >= 0 and  matrix[row+1][val-1] == "B":
+                matrix[row][val] = int(matrix[row][val]) + 1
+    
+    
+    
